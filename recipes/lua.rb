@@ -42,6 +42,6 @@ bash 'extract_luajit' do
   not_if { ::File.exist?(luajit_extract_path) }
 end
 
-package 'lua-devel' do
+package 'liblua' do
   action :install
 end
